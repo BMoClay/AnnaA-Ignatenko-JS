@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendulum of Existence</title>
+    <link rel="stylesheet" href="styles.css">
+    <script 
+        defer 
+        src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.1/dist/cdn.min.js"
+    ></script>
+</head>
+<body x-data="{'isModalOpen': false}" x-on:keydown.escape="isModalOpen=false">
+    <div class="header">
+        <div class="navbuttons">
+            <a id="button" href="12.html"><</a>
+            <a id="button" href="14.html">></a>
+        </div>
+        <div class="project-role">
+            <h2>Writer</h2>
+        </div>
+        <div class="project-title">
+            <h2>Pendulum of Existence</h2>
+        </div>
+        <div class="project-date">
+            <h2>Short Story</h2>
+        </div>
+        <div class="project-details">
+            <h2>work in progress</h2>
+        </div>
+        <div class="project-info" x-data="{ show: true}">
+            <button class="header-button" x-show="show"
+                x-on:click="isModalOpen = true; show = !show">
+            Info
+            </button>
+            <div x-show="isModalOpen" id=info class="model-inner"
+                x-on:click.away="isModalOpen = false; show = true">
+                <p>
+                    Blake and Lexine, my two childhood best friends. Their father, Todd, 
+                    worked at the Red Lion Inn, and their mom, Jill, was a busy 
+                    stay-at-home pampered chef consultant.  While my mom worked two jobs 
+                    and was never home, my own solitude was frightening and also 
+                    considered illegal. I found homage within their family unit, and they 
+                    willfully took me in. I spent a lot of time with the Hagens throughout 
+                    my elementary school days. My favorite dish by Jill was this 
+                    questionable but yummy American/Chinese clash of melted cheddar 
+                    cheese in white rice with soy sauce and sliced chicken, sometimes, she 
+                    would switch out the soy sauce for this tangy BBQ sauce.                     
+                </p>
+                <p>
+                    My entire upbringing is colored by trying to find homage in other 
+                    homes and other families. This longing still exists, even in my 
+                    thirties. By 5th grade, the cruel whims of childhood ostracization 
+                    turned its gaze upon my friendship with Blake and Lexine. They, 
+                    especially Blake, who was relegated to the 'special' group, were 
+                    branded as 'other', a label I never understood. They were not 'other'; 
+                    they were my refuge, my adopted family in a world where normalcy was a 
+                    shifting, elusive shadow.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="small-images">
+        <img src="img/pendulum/Oscillating_pendulum.gif"/>
+    </div>
+    <div class="overlay" x-show="isModalOpen" x-cloak></div>
+</body>
+</html>

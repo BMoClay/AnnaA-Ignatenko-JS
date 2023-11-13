@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>She Fell From A Pear Tree</title>
+    <link rel="stylesheet" href="styles.css">
+    <script 
+        defer 
+        src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.1/dist/cdn.min.js"
+    ></script>
+</head>
+<body x-data="{'isModalOpen': false}" x-on:keydown.escape="isModalOpen=false">
+    <div class="header">
+        <div class="navbuttons">
+            <a id="button" href="15.html"><</a>
+            <a id="button" href="17.html">></a>
+        </div>
+        <div class="project-role">
+            <h2>Co-Director & Producer</h2>
+        </div>
+        <div class="project-title">
+            <h2>She Fell From A Pear Tree</h2>
+        </div>
+        <div class="project-date">
+            <h2>2023</h2>
+        </div>
+        <div class="project-details">
+            <h2>Co-Directed and Produced with Andrea Lausevic</h2>
+            <h2>Currently in Post Production</h2>
+        </div>
+        <div class="project-info" x-data="{ show: true}">
+            <button class="header-button" x-show="show"
+                x-on:click="isModalOpen = true; show = !show">
+            Info
+            </button>
+            <div x-show="isModalOpen" id=info class="model-inner"
+                x-on:click.away="isModalOpen = false; show = true">
+                <p></p>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="images">
+        <img src="img/"/>
+    </div> -->
+    <div class="video">
+        <iframe width="640" height="360" frameborder="0" 
+        src="https://vimeo.com/878767947" allowfullscreen ></iframe>
+    </div>
+    <div class="overlay" x-show="isModalOpen" x-cloak></div>
+</body>
+</html>

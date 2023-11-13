@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carlos Reyes SaltWaterFarm</title>
+    <link rel="stylesheet" href="styles.css">
+    <script 
+        defer 
+        src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.1/dist/cdn.min.js"
+    ></script>
+</head>
+<body x-data="{'isModalOpen': false}" x-on:keydown.escape="isModalOpen=false">
+    <div class="header">
+        <div class="navbuttons">
+            <a id="button" href="18.html"><</a>
+            <a id="button" href="20.html">></a>
+        </div>
+        <div class="project-role">
+            <h2>Photography</h2>
+        </div>
+        <div class="project-artist-title">
+            <h2>Carlos Reyes <em>SaltWaterFarm</em></h2>
+        </div>
+        <div class="project-details">
+            <h2>Waldo Searsport Storage Exhibition</h2>
+        </div>
+        <div class="project-date">
+            <h2>October 31 - December 13, 2020</h2>
+        </div>
+        <!-- <div class="project-info" x-data="{ show: true}">
+            <button class="header-button" x-show="show"
+                x-on:click="isModalOpen = true; show = !show">
+            Info
+            </button>
+            <div x-show="isModalOpen" id=info class="model-inner"
+                x-on:click.away="isModalOpen = false; show = true">
+                <p></p>
+            </div>
+        </div> -->
+    </div>
+    <div class="images">
+        <img src="img/waldo/01-Carlos-Reyes-saltwaterfarm-Waldo-2020-1-scaled-Exposure.jpg"/>
+        <img src="img/waldo/02-Carlos-Reyes-saltwaterfarm-Waldo-2020-scaled-Exposure.jpg"/>
+        <img src="img/waldo/03-Carlos-Reyes-saltwaterfarm-Waldo-2020-scaled-Exposure.jpg"/>
+        <img src="img/waldo/04-Carlos-Reyes-saltwaterfarm-Waldo-2020-scaled-Exposure.jpg"/>
+        <img src="img/waldo/05-Carlos-Reyes-saltwaterfarm-Waldo-2020-scaled-Exposure.jpg"/>
+        <img src="img/waldo/06-Carlos-Reyes-saltwaterfarm-Waldo-2020-Exposure.jpg"/>
+        <img src="img/waldo/07-Carlos-Reyes-saltwaterfarm-Waldo-2020-scaled-Exposure.jpg"/>
+        <img src="img/waldo/08-Carlos-Reyes-saltwaterfarm-Waldo-2020-scaled-Exposure.jpg"/>
+        <img src="img/waldo/10-Carlos-Reyes-saltwaterfarm-Waldo-2020-scaled-Exposure.jpg"/>
+        <img src="img/waldo/11-Carlos-Reyes-saltwaterfarm-Waldo-2020-scaled-Exposure.jpg"/>
+        <img src="img/waldo/12-Carlos-Reyes-saltwaterfarm-Waldo-2020-scaled-Exposure.jpg"/>
+        <img src="img/waldo/13-Carlos-Reyes-saltwaterfarm-Waldo-2020-Exposure.jpg"/>
+        <img src="img/waldo/14-Carlos-Reyes-saltwaterfarm-Waldo-2020-Exposure.jpg"/>
+        <img src="img/waldo/15-Carlos-Reyes-saltwaterfarm-Waldo-2020-scaled-Exposure.jpg"/>
+        <img src="img/waldo/16-Carlos-Reyes-saltwaterfarm-Waldo-2020-scaled-Exposure.jpg"/>
+        <img src="img/waldo/17-Carlos-Reyes-saltwaterfarm-Waldo-2020-scaled-Exposure.jpg"/>
+        <img src="img/waldo/18-Carlos-Reyes-saltwaterfarm-Waldo-2020-Exposure.jpg"/>
+        <img src="img/waldo/19-Carlos-Reyes-saltwaterfarm-Waldo-2020-scaled-Exposure.jpg"/>
+        <img src="img/waldo/20-Carlos-Reyes-saltwaterfarm-Waldo-2020-scaled-Exposure.jpg"/>
+        <img src="img/waldo/21-Carlos-Reyes-saltwaterfarm-Waldo-2020-scaled-Exposure.jpg"/>
+        <img src="img/waldo/22-Carlos-Reyes-saltwaterfarm-Waldo-2020-scaled-Exposure.jpg"/>
+        <img src="img/waldo/23-Carlos-Reyes-saltwaterfarm-Waldo-2020-scaled-Exposure.jpg"/>
+        <img src="img/waldo/24-Carlos-Reyes-saltwaterfarm-Waldo-2020-scaled-Exposure.jpg"/>
+        <img src="img/waldo/25-Carlos-Reyes-saltwaterfarm-Waldo-2020-scaled-Exposure.jpg"/>
+        <img src="img/waldo/26-Carlos-Reyes-saltwaterfarm-Waldo-2020-scaled-Exposure.jpg"/>
+        <img src="img/waldo/27-Carlos-Reyes-saltwaterfarm-Waldo-2020-scaled-Exposure.jpg"/>
+        <img src="img/waldo/28-Carlos-Reyes-saltwaterfarm-Waldo-2020-scaled-Exposure.jpg"/>
+        <img src="img/waldo/29-Carlos-Reyes-saltwaterfarm-Waldo-2020-scaled-Exposure.jpg"/>
+    </div>
+    <div class="overlay" x-show="isModalOpen" x-cloak></div>
+</body>
+</html>

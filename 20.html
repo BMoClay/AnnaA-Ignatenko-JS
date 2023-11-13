@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WL</title>
+    <link rel="stylesheet" href="styles.css">
+    <script 
+        defer 
+        src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.1/dist/cdn.min.js"
+    ></script>
+</head>
+<body x-data="{'isModalOpen': false}" x-on:keydown.escape="isModalOpen=false">
+    <div class="header">
+        <div class="navbuttons">
+            <a id="button" href="19.html"><</a>
+            <a id="button" href="1.html">></a>
+        </div>
+        <div class="project-role">
+            <h2>Photography</h2>
+        </div>
+        <div class="project-title">
+            <h2>WL</h2>
+        </div>
+        <div class="project-date">
+            <h2>2013</h2>
+        </div>
+        <div class="project-details">
+            <h2>Interview Magazine</h2>
+        </div>
+    </div>
+    <div class="images">
+        <img src="img/wl/img-wl_133500779144.jpeg"/>
+    </div>
+    <div class="overlay" x-show="isModalOpen" x-cloak></div>
+</body>
+</html>

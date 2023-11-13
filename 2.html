@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good People</title>
+    <link rel="stylesheet" href="styles.css">
+    <script 
+        defer 
+        src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.1/dist/cdn.min.js"
+    ></script>
+</head>
+<body x-data="{'isModalOpen': false}" x-on:keydown.escape="isModalOpen=false">
+    <div class="header">
+        <div class="navbuttons">
+            <a id="button" href="1.html"><</a>
+            <a id="button" href="3.html">></a>
+        </div>
+        <div class="project-role">
+            <h2>Production Manager & Assistant Director</h2>
+        </div>
+        <div class="project-title">
+            <h2>Good People</h2>
+        </div>
+        <div class="project-date">
+            <h2>2022</h2>
+        </div>
+        <div class="project-details">
+            <h2>Directed by Keren Cytter </h2>
+        </div>
+        <div class="project-info" x-data="{ show: true}">
+            <button class="header-button" x-show="show"
+                x-on:click="isModalOpen = true; show = !show">
+            Info
+            </button>
+            <div x-show="isModalOpen" id=info class="model-inner"
+                x-on:click.away="isModalOpen = false; show = true">
+                <p>
+                    In March 2020, Sophia and Steve Alcorn found themselves stranded in a one-bedroom apartment in Elmhurst, 
+                    Queens. The married couple had just left Kentucky and moved to New York after Steve Alcorn started his 
+                    residency in Elmhurst hospital. Sophia Alcorn feels alienated in the neighborhood, famous for its 
+                    diversity, and finds comfort in the arms of a local young man. Meanwhile, Steve finds himself working 
+                    extra hours volunteering with the rest of the hospital team, facing an epidemic they didn't know before. 
+                    Elmhurst hospital found itself at the center of the storm, with a disproportionate number of critically 
+                    ill people and deaths, and young Dr. Alcorn is overwhelmed by the swift changes in his private life and 
+                    the morbid atmosphere at work. Affected by the situation, Sophia Alcorn decides to volunteer at a crisis 
+                    line, where she surprisingly befriends a young woman called Annie. The young couple drifts apart.
+                </p>
+                <p>
+                    This Comedy Drama weaves together issues that were exacerbated by the pandemic in New York City: 
+                    alienation, contemporary mythologies, and distorted mirroring created by the media, celebrities, and pop 
+                    culture.
+                </p>
+                <p>
+                    Production Notes:Good People is based on an original screenplay. The film was shot in Elmhurst, Queens, 
+                    NY, in the director's apartment, with unprofessional actors. The one continuous shot and the decision not 
+                    to tell a real-time storyline turns the film into cinema, theater, and home video.
+                </p>
+                <p>
+                    We worked on this film like a theater play. Memorizing the movements and text each day, which took a total 
+                    of 4 weeks of rehearsal. The camera kept running in the dark parts. We closed the windows and turned off 
+                    the lights to create this effect. I darkened it later more with post-production. Actors and production 
+                    manager/DA had to switch the rooms from day to night and also change the set, lighting, costume and props.
+                </p>
+                <p>
+                    Good People is the first one-continous shot feature by a female director in the US. It's the first 
+                    one-shot film where the director is also the scriptwriter and the camera.
+                </p> 
+                <p>
+                    Good People is funded by the Guggenheim Fellowship for Creative Arts US & Canada.    
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="video">
+    </div>
+    <div class="images">
+        <img src="img/goodpeople/1 Untitled_1.1.2-Exposure.jpg"/>
+        <img src="img/goodpeople/2 Untitled_1.1.5-Exposure.jpg"/>
+        <img src="img/goodpeople/3 Untitled_1.1.13-Exposure.jpg"/>
+        <img src="img/goodpeople/4 Untitled_1.1.15-Exposure.jpg"/>
+        <img src="img/goodpeople/5 Untitled_1.1.16-Exposure.jpg"/>
+        <img src="img/goodpeople/6 Untitled_1.1.18-Exposure.jpg"/>
+        <img src="img/goodpeople/7 Untitled_1.1.24-Exposure.jpg"/>
+        <img src="img/goodpeople/8 Untitled_1.1.10-Exposure.jpg"/>
+        <img src="img/goodpeople/8 Untitled_1.1.10-Exposure.jpg"/>
+        <img src="img/goodpeople/9 Untitled_1.1.8-Exposure.jpg"/>
+        <img src="img/goodpeople/10 Untitled_1.1.26-Exposure.jpg"/>
+        <img src="img/goodpeople/11 Untitled_1.1.29-Exposure.jpg"/>
+        <img src="img/goodpeople/12 Untitled_1.1.36-Exposure.jpg"/>
+        <img src="img/goodpeople/13 Untitled_1.1.31-Exposure.jpg"/>
+        <img src="img/goodpeople/14 Untitled_1.1.39-Exposure.jpg"/>
+        <img src="img/goodpeople/15 Untitled_1.1.38-Exposure.jpg"/>
+        <img src="img/goodpeople/16 Untitled_1.1.40-Exposure.jpg"/>
+        <img src="img/goodpeople/17 Untitled_1.1.46-Exposure.jpg"/>
+        <img src="img/goodpeople/18 Untitled_1.1.49-Exposure.jpg"/>
+        <img src="img/goodpeople/19 Untitled_1.1.52-Exposure.jpg"/>
+        <img src="img/goodpeople/20 Untitled_1.1.57-Exposure.jpg"/>
+        <img src="img/goodpeople/21 Untitled_1.1.61-Exposure.jpg"/>
+        <img src="img/goodpeople/22 Untitled_1.1.66-Exposure.jpg"/>
+        <img src="img/goodpeople/23 Untitled_1.1.68-Exposure.jpg"/>
+        <img src="img/goodpeople/24 Untitled_1.1.70-Exposure.jpg"/>
+        <img src="img/goodpeople/25 Untitled_1.1.81-Exposure.jpg"/>
+        <img src="img/goodpeople/26 Untitled_1.1.84-Exposure.jpg"/>
+        <img src="img/goodpeople/27 Untitled_1.1.87-Exposure.jpg"/>
+        <img src="img/goodpeople/28 Untitled_1.1.92-Exposure.jpg"/>
+        <img src="img/goodpeople/29 Untitled_1.1.96-Exposure.jpg"/>
+        <img src="img/goodpeople/30 Untitled_1.1.103-Exposure.jpg"/>
+        <img src="img/goodpeople/31 Untitled_1.1.110-Exposure.jpg"/>
+        <img src="img/goodpeople/32 Untitled_1.1.125-Exposure.jpg"/>
+        <img src="img/goodpeople/33 Untitled_1.1.126-Exposure.jpg"/>
+    </div>
+    <div class="overlay" x-show="isModalOpen" x-cloak></div>
+</body>
+</html>

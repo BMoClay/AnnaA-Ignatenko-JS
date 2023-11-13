@@ -1,0 +1,63 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1 - Anna A Ignatenko</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.1/dist/cdn.min.js"></script>
+</head>
+<body x-data="{'isModalOpen': false}" x-on:keydown.escape="isModalOpen=false">
+    <div class="header">
+        <div class="navbuttons">
+            <a id="button" href="20.html"><</a>
+            <a id="button" href="2.html">></a>
+        </div>
+        <div class="project-role">
+            <h2>Anna A. Ignatenko</h2>
+        </div>
+    </div>
+    <div class="footer" x-data="{ show: true}">
+        <button class="footer-button" x-show="show"
+            x-on:click="isModalOpen = true; show = !show">
+        Info
+        </button>
+        <div class="modal" role="dialog" tabindex="-1" 
+            x-show="isModalOpen" x-cloak x-transition>
+            <template x-teleport="body">
+                <div x-show="isModalOpen;" id=info class="model-inner"
+                    x-on:click.away="isModalOpen = false; show = true">
+                    <p>
+                        Anna Aleksandrovna Ignatenko <br> New York, NY
+                    </p>                   
+                    <p>
+                        Anna is a filmmaker and artist, and her expertise spans photography, sculpture, video, filmmaking, 
+                        and screenwriting. She is currently on track to graduate in Spring 2024 from the School of Arts at
+                        Columbia University in Film & Media Studies.
+                    </p> 
+                    <p>
+                        She has previously studied Cognitive Science and Neuroscience & Behavioral Studies at the School 
+                        of Psychology, School of Cognitive Science, and Department of Biological Sciences at Columbia
+                        University. 
+                    </p>
+                    <p>
+                        In addition to her own ventures, she is open to collaborating on others’ films or video projects 
+                        as a producer, production manager, researcher, or director of photography. She also supports
+                        fellow artists, managing exhibitions and overseeing studios from both production and creative
+                        perspectives.
+                    </p>
+                    <p>
+                        Professionally, Anna is actively preparing for two new projects set to begin filming this upcoming
+                        winter and has other collaborated on films currently either shortlisted or in post-production
+                        scheduled for release in 2024. Upcoming on the academic front, she is preparing to apply to Ph.D.
+                        programs this December for Fall 2024.
+                    </p>
+                    <p>
+                        For inquiries or partnerships, she can be reached at aai2131@columbia.edu. 
+                    </p>
+                </div>        
+            </template>
+        </div>
+        <div class="overlay" x-show="isModalOpen" x-cloak></div>
+    </div>
+</body>
+</html>

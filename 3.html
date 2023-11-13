@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centinel</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.1/dist/cdn.min.js"></script>
+</head>
+<body x-data="{'isModalOpen': false}" x-on:keydown.escape="isModalOpen=false">
+    <div class="header">
+        <div class="navbuttons">
+            <a id="button" href="2.html"><</a>
+            <a id="button" href="4.html">></a>
+        </div>
+        <div class="project-role">
+            <h2>Producer</h2>
+        </div>
+        <div class="project-title">
+            <h2>Centinel</h2>
+        </div>
+        <div class="project-date">
+            <h2>2019</h2>
+        </div>
+        <div class="project-details">
+            <h2>Directed by Jasper Spicero</h2>
+            <h2>Part of an installation for Swiss Institute</h2>
+        </div>
+    </div>
+   
+    
+    <iframe width="640" height="360" frameborder="0" src="https://mega.nz/embed/w70EkY4R#-lKu5ZJniIGAdRZxazeOeJsXXPcbBvwNkxaGiS5PzfU" allowfullscreen ></iframe>
+
+    <div class="subsection-title">
+        <h2>On-Set Photography</h2>
+    </div>
+    <div class="images">
+        <img src="img/centinel/DSC6749 copy-min.jpg">
+        <img src="img/centinel/DSC6754 copy-min.jpg">
+        <img src="img/centinel/DSC6760 copy-min.jpg">
+        <img src="img/centinel/DSC6761 copy-min.jpg">
+        <img src="img/centinel/DSC6771 copy-min.jpg">
+    </div>
+    <div class="subsection-title">
+        <h2>Film Stills</h2>
+    </div>
+    <div class="images">
+        <img src="img/centinel/Bell2-still.jpg" alt="">
+        <img src="img/centinel/Crying1-still.jpg" alt="">
+        <img src="img/centinel/Mojo2-still.jpg" alt="">
+        <img src="img/centinel/N Tahj1-still.jpg" alt="">
+    </div>
+    <div class="subsection-title">
+        <h2>Press</h2>
+    </div>
+    <div class="images">
+        <img src="img/centinel/SI-Spicero-WEB-24.jpg" alt="">
+        <img id="press" src="img/centinel/2019_Curamagazine_Spicero_Feb-11 copy-1-min.jpg" alt="">
+        <img id="press" src="img/centinel/2019_Curamagazine_Spicero_Feb-11 copy-2-min.jpg" alt="">
+    </div>
+    <div class="overlay" x-show="isModalOpen" x-cloak></div>
+</body>
+</html>

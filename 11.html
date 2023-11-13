@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic Fades</title>
+    <link rel="stylesheet" href="styles.css">
+    <script 
+        defer 
+        src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.1/dist/cdn.min.js"
+    ></script>
+</head>
+<body x-data="{'isModalOpen': false}" x-on:keydown.escape="isModalOpen=false">
+    <div class="header">
+        <div class="navbuttons">
+            <a id="button" href="10.html"><</a>
+            <a id="button" href="12.html">></a>
+        </div>
+        <div class="project-role">
+            <h2>Director of Photography</h2>
+        </div>
+        <div class="project-title">
+            <h2>Magic Fades "Ecco" Music Video</h2>
+        </div>
+        <div class="project-date">
+            <h2>2014</h2>
+        </div>
+        <div class="project-details">
+            <h2>Directed by Chris Cantino</h2>
+        </div>
+        <!-- <div class="project-info" x-data="{ show: true}">
+            <button class="header-button" x-show="show"
+                x-on:click="isModalOpen = true; show = !show">
+            Info
+            </button>
+            <div x-show="isModalOpen" id=info class="model-inner"
+                x-on:click.away="isModalOpen = false; show = true">
+                <p></p>
+            </div>
+        </div> -->
+    </div>
+    <!-- <div class="images">
+        <img src="img/"/>
+    </div>
+    <div class="overlay" x-show="isModalOpen" x-cloak></div> -->
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GC</title>
+    <link rel="stylesheet" href="styles.css">
+    <script 
+        defer 
+        src="https://cdn.jsdelivr.net/npm/alpinejs@3.13.1/dist/cdn.min.js"
+    ></script>
+</head>
+<body x-data="{'isModalOpen': false}" x-on:keydown.escape="isModalOpen=false">
+    <div class="header">
+        <div class="navbuttons">
+            <a id="button" href="5.html"><</a>
+            <a id="button" href="7.html">></a>
+        </div>
+        <div class="project-role">
+            <h2>Photographer</h2>
+        </div>
+        <div class="project-title">
+            <h2>Two-Three Collections for Gauntlett Cheng</h2>
+        </div>
+        <div class="project-date">
+            <h2>2019-2021</h2>
+        </div>
+        <div class="project-details">
+            <h2></h2>
+        </div>
+        <div class="project-info" x-data="{ show: true}">
+            <button class="header-button" x-show="show"
+                x-on:click="isModalOpen = true; show = !show">
+            Info
+            </button>
+            <div x-show="isModalOpen" id=info class="model-inner"
+                x-on:click.away="isModalOpen = false; show = true">
+                <p></p>
+            </div>
+        </div>
+    </div>
+    <div class="small-images">
+        <img src="img/gc/GC_Look 01_01-E.jpg"/>
+        <img src="img/gc/GC_Look 01_02-E.jpg"/>
+        <img src="img/gc/GC_Look 01_03-E.jpg"/>
+        <img src="img/gc/GC_Look 01_04-E.jpg"/>
+        <img src="img/gc/GC_Look 01_05-E.jpg"/>
+        <img src="img/gc/GC_Look 01_06-E.jpg"/>
+        <img src="img/gc/GC_Look 02_01-E.jpg"/>
+        <img src="img/gc/GC_Look 02_02-E.jpg"/>
+        <img src="img/gc/GC_Look 02_03-E.jpg"/>
+        <img src="img/gc/GC_Look 02_04-E.jpg"/>
+        <img src="img/gc/GC_Look 02_05-E.jpg"/>
+        <img src="img/gc/GC_Look 03_01-E.jpg"/>
+        <img src="img/gc/GC_Look 03_02-E.jpg"/>
+        <img src="img/gc/GC_Look 03_03-E.jpg"/>
+        <img src="img/gc/GC_Look 03_04-E.jpg"/>
+        <img src="img/gc/GC_Look 03_05-E.jpg"/>
+        <img src="img/gc/GC_Look 04_01 RETOUCHED-E.jpg"/>
+        <img src="img/gc/GC_Look 04_02-E.jpg"/>
+        <img src="img/gc/GC_Look 04_03-E.jpg"/>
+        <img src="img/gc/GC_Look 04_04-E.jpg"/>
+        <img src="img/gc/GC_Look 04_05-E.jpg"/>
+        <img src="img/gc/GC_Look 05_01-E.jpg"/>
+        <img src="img/gc/GC_Look 05_02-E.jpg"/>
+        <img src="img/gc/GC_Look 05_03-E.jpg"/>
+        <img src="img/gc/GC_Look 05_04-E.jpg"/>
+        <img src="img/gc/GC_Look 05_05-E.jpg"/>
+        <img src="img/gc/GC_Look 06_01-E.jpg"/>
+        <img src="img/gc/GC_Look 06_02-E.jpg"/>
+        <img src="img/gc/GC_Look 06_03-E.jpg"/>
+        <img src="img/gc/GC_Look 06_04-E.jpg"/>
+        <img src="img/gc/GC_Look 06_05-E.jpg"/>
+        <img src="img/gc/GC_Look 07_01-E.jpg"/>
+        <img src="img/gc/GC_Look 07_02-E.jpg"/>
+        <img src="img/gc/GC_Look 07_03-E.jpg"/>
+        <img src="img/gc/GC_Look 07_04-E.jpg"/>
+        <img src="img/gc/GC_Look 07_05-E.jpg"/>
+        <img src="img/gc/GC_Look 07_06-E.jpg"/>
+        <img src="img/gc/GC_Look 08_01-E.jpg"/>
+        <img src="img/gc/GC_Look 08_02-E.jpg"/>
+        <img src="img/gc/GC_Look 08_03-E.jpg"/>
+        <img src="img/gc/GC_Look 08_04-E.jpg"/>
+        <img src="img/gc/GC_Look 08_05-E.jpg"/>
+        <img src="img/gc/GC_Look 08_06-E.jpg"/>
+        <img src="img/gc/GC_Look 09_01-E.jpg"/>
+        <img src="img/gc/GC_Look 09_02-E.jpg"/>
+        <img src="img/gc/GC_Look 09_03-E.jpg"/>
+        <img src="img/gc/GC_Look 09_04-E.jpg"/>
+        <img src="img/gc/GC_Look 09_05-E.jpg"/>
+        <img src="img/gc/GC_Look 10_01-E.jpg"/>
+        <img src="img/gc/GC_Look 10_02-E.jpg"/>
+        <img src="img/gc/GC_Look 10_03-E.jpg"/>
+        <img src="img/gc/GC_Look 10_04-E.jpg"/>
+        <img src="img/gc/GC_Look 10_05-E.jpg"/>
+        <img src="img/gc/GC_Look 10_01-E.jpg"/>
+        <img src="img/gc/GC_Look 10_02-E.jpg"/>
+        <img src="img/gc/GC_Look 10_03-E.jpg"/>
+        <img src="img/gc/GC_Look 10_04-E.jpg"/>
+        <img src="img/gc/GC_Look 10_05-E.jpg"/>
+        <img src="img/gc/GC_Look 11_01-E.jpg"/>
+        <img src="img/gc/GC_Look 11_02-E.jpg"/>
+        <img src="img/gc/GC_Look 11_03-E.jpg"/>
+        <img src="img/gc/GC_Look 11_04-E.jpg"/>
+        <img src="img/gc/GC_Look 11_05-E.jpg"/>
+        <img src="img/gc/GC_Look 12_01-E.jpg"/>
+        <img src="img/gc/GC_Look 12_02-E.jpg"/>
+        <img src="img/gc/GC_Look 12_03-E.jpg"/>
+        <img src="img/gc/GC_Look 12_04-E.jpg"/>
+        <img src="img/gc/GC_Look 12_05-E.jpg"/>
+        <img src="img/gc/GC_Look 13_01-E.jpg"/>
+        <img src="img/gc/GC_Look 13_02-E.jpg"/>
+        <img src="img/gc/GC_Look 13_03-E.jpg"/>
+        <img src="img/gc/GC_Look 13_04-E.jpg"/>
+        <img src="img/gc/GC_Look 13_05-E.jpg"/>
+        <img src="img/gc/GC_Look 13_06-E.jpg"/>
+        <img src="img/gc/GC_Look 14_01-E.jpg"/>
+        <img src="img/gc/GC_Look 14_02-E.jpg"/>
+        <img src="img/gc/GC_Look 14_03-E.jpg"/>
+        <img src="img/gc/GC_Look 14_04-E.jpg"/>
+        <img src="img/gc/GC_Look 14_05-E.jpg"/>
+        <img src="img/gc/GC_Look 14_06-E.jpg"/>
+        <img src="img/gc/GC_Look 16_01-E.jpg"/>
+        <img src="img/gc/GC_Look 16_02-E.jpg"/>
+        <img src="img/gc/GC_Look 16_03-E.jpg"/>
+        <img src="img/gc/GC_Look 16_04-E.jpg"/>
+        <img src="img/gc/GC_Look 16_05-E.jpg"/>
+        <img src="img/gc/GC_Look 17_01-E.jpg"/>
+        <img src="img/gc/GC_Look 17_04-E.jpg"/>
+        <img src="img/gc/GC_Look 17_05-E.jpg"/>
+        <img src="img/gc/GC_Look 17_06-E.jpg"/>
+        <img src="img/gc/GC_Look 17_07-E.jpg"/>
+        <img src="img/gc/GC_Look 17_08-E.jpg"/>
+        <img src="img/gc/GC_Look 17_10-E.jpg"/>
+        <img src="img/gc/GC_Look 18_01-E.jpg"/>
+        <img src="img/gc/GC_Look 18_02-E.jpg"/>
+        <img src="img/gc/GC_Look 18_03-E.jpg"/>
+        <img src="img/gc/GC_Look 18_04-E.jpg"/>
+        <img src="img/gc/GC_Look 18_05-E.jpg"/>
+        <img src="img/gc/GC_Look 19_01-E.jpg"/>
+        <img src="img/gc/GC_Look 19_02-E.jpg"/>
+        <img src="img/gc/GC_Look 19_03-E.jpg"/>
+        <img src="img/gc/GC_Look 20_01-E.jpg"/>
+        <img src="img/gc/GC_Look 20_02-E.jpg"/>
+        <img src="img/gc/GC_Look 21_01-E.jpg"/>
+        <img src="img/gc/GC_Look 21_02-E.jpg"/>
+        <img src="img/gc/GC_Look 21_03-E.jpg"/>
+        <img src="img/gc/GC_Look 21_04-E.jpg"/>
+        <img src="img/gc/GC_Look 21_05-E.jpg"/>
+    </div>
+    <div class="overlay" x-show="isModalOpen" x-cloak></div>
+</body>
+</html>
